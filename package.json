@@ -2,10 +2,8 @@
 	"name": "laravel-create-view",
 	"displayName": "Laravel Create View",
 	"description": "Create laravel view using dot notation",
-	"author": {
-		"name": "Glitchbl"
-	},
-	"version": "0.1.0",
+	"version": "0.0.1",
+	"publisher": "glitchbl",
 	"engines": {
 		"vscode": "^1.35.0"
 	},
