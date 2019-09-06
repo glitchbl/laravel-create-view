@@ -13,12 +13,12 @@ function createView(view: string) {
 		let filename = `${view_explode.pop()}.blade.php`;
 		let full_path = path.join(directory_path, filename);
 		if (fs.existsSync(full_path)) {
-			vscode.window.showWarningMessage('La vue est déjà présente.');
+			vscode.window.showWarningMessage('View already exists.');
 		} else {
 			mkdirp(directory_path, (err: any) => {
-				if (err) vscode.window.showErrorMessage(`Impossible de créer le répertoire ${directory_path}.`);
+				if (err) vscode.window.showErrorMessage(`Can't create directory ${directory_path}.`);
 				fs.writeFileSync(full_path, '', 'utf8');
-				vscode.window.showInformationMessage('La vue a bien été créé.');
+				vscode.window.showInformationMessage('View created.');
 
 				let file = vscode.Uri.file(full_path);
 				vscode.workspace.openTextDocument(file).then(doc => {
@@ -27,7 +27,7 @@ function createView(view: string) {
 			})
 		}
 	} else {
-		vscode.window.showErrorMessage('Aucun espace de travail disponible.');
+		vscode.window.showErrorMessage('No workspace avaible.');
 	}
 }
 
@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
 				if (/^[_a-z0-9]+(\.[_a-z0-9]+)*$/.test(value)) {
 					createView(value);
 				} else {
-					vscode.window.showErrorMessage("La vue renseignée n'est pas valide.");
+					vscode.window.showErrorMessage("View path not valid.");
 				}
 			});
 		}
