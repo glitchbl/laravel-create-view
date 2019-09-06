@@ -6,4 +6,4 @@
 
 # Usage from php or blade files
 1. Select view path
-2. Click on Laravel: Create View
+2. Click on the bulb then Laravel: Create View
