@@ -4,6 +4,7 @@
 1. In the command palette (`Ctrl-Shift-P` or `Cmd-Shift-P`) select Laravel: Create View
 
 ![Command Palette](https://github.com/glitchbl/laravel-create-view/raw/master/images/command-palette.png)
+
 2. Type your view path
 
 ![Command View Path](https://github.com/glitchbl/laravel-create-view/raw/master/images/view-path.png)
