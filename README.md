@@ -9,7 +9,7 @@
 
 ![Command View Path](https://github.com/glitchbl/laravel-create-view/raw/master/images/view-path.png)
 
-# Usage from php files
+# Usage from php and blade files
 1. Select view path
 2. Click on the bulb then Laravel: Create View
 
